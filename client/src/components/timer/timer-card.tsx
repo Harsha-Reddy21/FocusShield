@@ -32,8 +32,8 @@ export default function TimerCard({
   const progressCircleRef = useRef<SVGCircleElement>(null);
   
   // Sound effects
-  const { play: playStartSound } = useSound('/sounds/start.mp3');
-  const { play: playCompleteSound } = useSound('/sounds/complete.mp3');
+  const { play: playStartSound } = useSound('start');
+  const { play: playCompleteSound } = useSound('complete');
   
   // Local form state for timer settings
   const [localSettings, setLocalSettings] = useState({
